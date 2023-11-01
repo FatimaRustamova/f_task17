@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1{
+    @include section;
+    background-image: url("https://mobirise.com/extensions/glassm5/photo/assets/images/background4.jpg");
+    @include background;
+    opacity: 0.9;
+    .container{
+        @include container;
+        .pricing{
+            @include center;
+            flex-direction: column;
+            .our{
+                width: 60%;
+                @include center;
+                flex-direction: column;
+                gap: 8px;
+                p{
+                    font-family: $font-family1;
+                    color: $color1;
+                    font-size: 18px;
+                }
+                h2{
+                    font-family: $font-family1;
+                    color: $color1;
+                    font-size: 30px;
+                }
+            }
+            .lorem{
+                width: 100%;
+                margin-top: 50px;
+                @include flex;
+                .buy{
+                    width: 32%;
+                    padding: 80px 50px;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    background-color: rgba($color: $color2, $alpha: 0.6);
+                    h1{
+                        font-family: $font-family1;
+                        font-size: 70px;
+                        color: $color1;
+                    }
+                    h2{
+                        font-family: $font-family1;
+                        color: $color1;
+                        font-size: 30px;
+                    }
+                    p{
+                        font-family: $font-family2;
+                        color: $color1;
+                        font-size: 15px;
+                    }
+                    div{
+                        width: 170px;
+                        height: 55px;
+                        border-radius: 40px;
+                        @include color;
+                        @include center;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            color: $color2;
+                            font-family: $font-family2;
+                            font-size: 17px;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.section2{
+    @include section;
+    background-image: url("https://mobirise.com/extensions/glassm5/photo/assets/images/background1.jpg");
+    @include background;
+    .container{
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 32px;
+        .us{
+            background-color: rgba($color: $color2, $alpha: 0.6);
+            padding: 100px 0;
+            border-radius: 25px;
+            .message{
+                width: 90%;
+                @include flex;
+                align-items: center;
+                flex-direction: column;
+                margin-left: 50px;
+                .contact{
+                    width: 50%;
+                    @include center;
+                    h4{
+                        font-family: $font-family3;
+                        font-size: 30px;
+                        letter-spacing: 1px;
+                        color: $color1;
+                    }
+                }
+                .name{
+                    @include flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    margin-top: 50px;
+                    input{
+                         width: 49%;
+                         height: 45px;
+                         border: 1px solid $color3;
+                         border-radius: 10px;
+                         background-color: rgba($color: $color2, $alpha: 0.7);
+                        }
+                    textarea{
+                        width: 100%;
+                        border: 1px solid $color3;
+                        border-radius: 10px;
+                        font-family: $font-family3;
+                        font-size: 20px;
+                        background-color: rgba($color: $color2, $alpha: 0.7);
+                    }        
+                }
+                .send{
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 45px;
+                    @include color;
+                    margin-top: 15px;
+                    @include center;
+                    font-family: $font-family2;
+                    color: $color2;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.section3{
+    @include section;
+    background-image: url("https://mobirise.com/extensions/glassm5/photo/assets/images/background5.jpg");
+    @include background;
+    .container{
+        @include container;
+        .position{
+            @include flex;
+            align-items: center;
+            position: relative;
+            .picture{
+                width: 32%;
+                img{
+                    width: 100%;
+                    border-radius: 25px;
+                }
+            }
+            .ipsum{
+                width: 65%;
+                padding: 80px 100px 80px 50px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: rgba($color: $color2, $alpha: 0.6);
+                border-radius: 25px;
+                @include box-shadow;
+                h2{
+                    font-family: $font-family3;
+                    font-size: 30px;
+                    color: $color1;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $font-family4;
+                    font-weight: bold;
+                    color: $color1;
+                    font-size: 17px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+.section4{
+    @include section;
+    background-color: $color8;
+    .container{
+        @include container;
+        .nanny{
+            @include flex;
+            .photo{
+                width: 47%;
+                position: relative;
+                img{
+                    width: 100%;
+                    border-radius: 25px;
+                }
+                .happy{
+                    width: 280px;
+                    height: 230px;
+                    border-radius: 25px;
+                    background-color: $color5;
+                    position: absolute;
+                    bottom: -50px;
+                    right: -50px;
+                    @include center;
+                    .hours{
+                        width: 250px;
+                        height: 200px;
+                        border: 2px dashed $color2;
+                        border-radius: 25px;
+                        @include center;
+                        flex-direction: column;
+                        gap: 10px;
+                        h3{
+                            font-family: $font-family2;
+                            color: $color2;
+                            font-size: 25px;
+                        }
+                        h4{
+                            font-family: $font-family2;
+                            color: $color2;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            .service{
+                width: 48%;
+                padding: 0 80px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 35px;
+                h2{
+                    font-family: $font-family5;
+                    color: $color4;
+                    font-size: 45px;
+                }
+                p{
+                    font-family: $font-family1;
+                    color: $color7;
+                    font-size: 18px;
+                }
+                .button{
+                    width: 170px;
+                    height: 50px;
+                    border-radius: 25px;
+                    background-color: $color6;
+                    @include center;
+                    cursor: pointer;
+                    div{
+                        width: 160px;
+                        height: 40px;
+                        border-radius: 25px;
+                        border: 3px dashed $color2;
+                        color: $color2;
+                        @include center;
+                        font-family: $font-family3;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section5{
+    @include section;
+    .container{
+        @include cont;
+        .meet{
+            @include flex;
+            align-items: center;
+            .baby{
+                width: 32%;
+                position: relative;
+                img{
+                    width: 100%;
+                    border-radius: 25px;
+                }
+                .mail{
+                    width: 350px;
+                    height: 500px;
+                    position: absolute;
+                    top: 50px;
+                    left: 250px;
+                    border-radius: 25px;
+                    background-color: $color5;
+                    @include center;
+                   .best{ 
+                        width: 300px;
+                        height: 450px;
+                        border: 2px dashed $color2;
+                        border-radius: 25px;
+                        @include center;
+                        div{
+                            width: 230px;
+                            height: 380px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            h2{
+                                font-family: $font-family3;
+                                font-size: 25px;
+                                color: $color2;
+                            }
+                            input{
+                                width: 100%;
+                                height: 40px;
+                                border-radius: 25px;
+                                border: 1px solid $color3;
+                            }
+                            textarea{
+                                width: 100%;
+                                height: 150px;
+                                border-radius: 25px;
+                                border: 1px solid $color3;
+                            }
+                            button{
+                                width: 100%;
+                                border-radius: 25px;
+                                height: 50px;
+                                border: 1px solid $color6;
+                                background-color: $color6;
+                                font-family: $font-family1;
+                                color: $color2;
+                                font-size: 18px;
+                                font-weight: bold;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }           
+            .who{
+                width: 47%;
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                padding: 0 60px;
+                h2{
+                    font-family: $font-family5;
+                    color: $color4;
+                    font-size: 45px;
+                }
+                p{
+                    font-family: $font-family1;
+                    color: $color7;
+                    font-size: 18px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    div{
+                        display: flex;
+                        gap: 20px;
+                        i{
+                            padding: 6px;
+                            background-color: $color5;
+                            border-radius: 50%;
+                            color: $color2;
+                            font-size: 20px;
+                        }
+                        li{
+                            list-style-type: none;
+                            font-family: $font-family5;
+                            font-size: 25px;
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section6{
+    @include section;
+    .container{
+        @include cont;
+        .outdoor{
+            @include flex;
+            .drawing{
+                width: 47%;
+                padding: 0 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                h2{
+                    font-family: $font-family5;
+                    color: $color4;
+                    font-size: 45px;
+                }
+                p{
+                    font-family: $font-family1;
+                    color: $color7;
+                    font-size: 18px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    div{
+                        display: flex;
+                        gap: 25px;
+                        img{
+                            width: 7%;
+                        }
+                        li{
+                            list-style-type: none;
+                            font-family: $font-family5;
+                            font-size: 25px;
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+            .children{
+                width: 45%;
+                img{
+                    width: 100%;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width:895px) {
+    .section2{
+        width: 100%;
+        .container{
+            .us{
+                width: 100%;
+                .message{
+                    width: 90%;
+                    .contact{
+                        width: 100%;
+                    }
+                    .name{
+                        width: 100%;
+                        flex-direction: column;
+                        input{
+                            width: 100%;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                    .send{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }   
+    
+}
+
+@media screen and (max-width:768px) {
+    .section1{
+        width: 100%;
+        .container{
+            .pricing{
+                width: 100%;
+                .our{
+                    width: 100%;
+                }
+                .lorem{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                    .buy{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+    .section6{
+        width: 100%;
+        .container{
+            .outdoor{
+                flex-direction: column;
+                .drawing{
+                    width: 100%;
+                }
+                .children{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .section1{
+        width: 100%;
+        .container{
+            .pricing{
+                width: 100%;
+                .our{
+                    width: 100%;
+                }
+                .lorem{
+                    flex-direction: column;
+                    .buy{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .section2{
+        width: 100%;
+        .container{
+            padding: 0 28px;
+            .us{
+                width: 100%;
+                .message{
+                    width: 90%;
+                    .contact{
+                        width: 100%;
+                    }
+                    .name{
+                        width: 100%;
+                        flex-direction: column;
+                        input{
+                            width: 100%;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                    .send{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+}
